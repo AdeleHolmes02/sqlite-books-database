@@ -43,3 +43,22 @@ The project includes:
 Adele
 
 
+## How to Run the Project
+
+Open the terminal inside the project folder and run:
+
+```bash
+sqlite3 books_quotes.db
+```
+
+Then run:
+
+```sql
+.read schema.sql
+.read data.sql
+.headers on
+.mode column
+.read queries.sql
+```
+
+This will create the tables, insert the data, and execute the required queries.
